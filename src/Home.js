@@ -1,9 +1,15 @@
 import React from 'react'
 import Itemcard from './Itemcard'
 import data from './data'
+import {useNavigate} from 'react-router-dom'
 
 const Home = () => {
 
+  const navigate=useNavigate();
+ const navigateCart=()=>
+ {
+   navigate('/Cart')
+ }
 
   return (
     <>
@@ -26,6 +32,8 @@ const Home = () => {
         
         </div>
     </section>
+    <button className=' btn btn-danger text-center' onClick={navigateCart}>Go To Cart</button>
+    
     </>
   )
 }
