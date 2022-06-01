@@ -11,14 +11,15 @@ const Home = () => {
     <section className="py-4 container">
         <div className="row justify-content">
           {
-            data.productData.map((element,key)=>{
+            data.productData.map((item,index)=>{
                 return (
                   <Itemcard 
-                  img={element.img} 
-                  title={element.title} 
-                  desc={element.desc}
-                   price={element.price}
-                    key={key} />
+                  img={item.img} 
+                  title={item.title} 
+                  desc={item.desc}
+                   price={item.price}
+                   item={item}
+                    key={index} />
                 )
             })
           }
