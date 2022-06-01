@@ -14,7 +14,7 @@ function App() {
     <Router>
     <CartProvider>
       <Routes>
-    <Route path="/Home" element={<Home/>}/>
+    <Route path="/" element={<Home/>}/>
     <Route exact path='/Cart' element={<Cart/>}/>
    <Route exact path="/Finalpage" element={<Finalpage/>}/>
 

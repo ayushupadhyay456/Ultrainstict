@@ -1,12 +1,13 @@
 import React from 'react'
 import {useCart} from 'react-use-cart'
 import { useNavigate } from 'react-router-dom';
+import FinalPage from './Finalpage';
 const Cart = () => {
   const navigate=useNavigate();
 
   const navigatehome=()=>
   {
-    navigate('/Home')
+    navigate('/')
   }
   const navigateFinal=()=>
   {
